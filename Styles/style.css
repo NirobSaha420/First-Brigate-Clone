@@ -1,5 +1,7 @@
 /* Reset style */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700;800&display=swap');
+
 * {
     margin: 0;padding: 0;box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
@@ -81,4 +83,47 @@ button:hover {
 }
 .social a:last-child {
     border-right: .1rem solid #ccc;
+}
+
+/* Nav bar */
+
+nav .container .nav-contents{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-contents .logo{
+    padding: 1rem 0;
+}
+
+.nav-contents ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+.nav-contents ul li a{
+    display: block;
+    text-decoration: none;
+    font-family: "oswald", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    color: var(--heading-primary);
+    padding: 0 1rem;
+    transition: .3s ease;
+}
+
+.nav-contents ul li a:hover{
+    color: var(--btnBg);
+}
+
+.nav-contents ul li a i{
+    font-size: 1.4rem;
+}
+
+.nav-contents ul li #search-icon{
+    font-size: 1.6rem;
+    font-weight: bolder;
 }
