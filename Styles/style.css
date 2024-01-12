@@ -127,3 +127,43 @@ nav .container .nav-contents{
     font-size: 1.6rem;
     font-weight: bolder;
 }
+
+/* Hero Section */
+
+.hero{
+    background: url(../Images/slide-2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 9rem 0;
+}
+
+.hero .hero-contents{
+    width: 65%;
+}
+
+.hero .container .hero-contents h1{
+    text-transform: uppercase;
+    color: var(--heading-secondary);
+    font-size: 4rem;
+    word-spacing: .5rem;
+    letter-spacing: .2rem;
+    font-family: "oswald";
+    font-weight: normal;
+    margin-bottom: 2.5rem;
+}
+
+.hero-contents p{
+    color: var(--pClor);
+    color: var(--heading-secondary);
+    font-size: 1.1rem;
+    line-height: 2rem;
+    width: 60%;
+    margin-bottom: 2.5rem;
+}
+
+.hero-contents #btn1{
+    font-size: 1.2rem;
+    font-family: "oswald", sans-serif;
+    letter-spacing: .2rem;
+    margin-bottom: 4rem;
+}
