@@ -1,0 +1,74 @@
+/* for midium devices */
+
+@media screen and (max-width: 900px) {
+    .contact-bar{
+        display: none;
+    }
+    .nav-contents{
+        flex-direction: column;
+    }
+
+    #search-icon{
+        display: block;
+    }
+
+}
+
+/* for small devices */
+
+@media screen and (max-width: 800px) and (min-width: 450px) {
+    .nav-contents ul li a i{
+        display: none;
+    }
+    .hero{
+        padding: 7rem 0;
+    }
+    .hero .container .hero-contents{
+        width: 100%;
+    }
+    .hero .container .hero-contents h1{
+        font-size: 3rem;
+    }
+}
+
+/* for x-small devices */
+
+@media screen and (max-width: 450px) and (min-width: 319px) {
+    .nav-contents ul li a i{
+        display: none;
+    }
+    .hero{
+        padding: 5rem 0;
+    }
+    .hero .container .hero-contents{
+        width: 100%;
+    }
+    .hero .container .hero-contents h1{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .hero-contents p,h1,button{
+        margin-bottom: 1rem;
+    }
+    .hero-contents p{
+        width: 80%;
+    }
+    button{
+        font-size: .6rem;
+    }
+    .nav-contents ul li a{
+        padding: 0 .5rem;
+    }
+    #search-icon{
+        display: none;
+    }
+    .logo ul{
+        display: block;
+        font-size: 2.5rem;
+        color: #000;
+    }
+    .nav-contents ul li a{
+        padding: 0 .5rem;
+        letter-spacing: normal;
+    }
+}

@@ -87,12 +87,14 @@ button:hover {
 
 /* Nav bar */
 
+nav{
+    background-color: var(--heading-secondary);
+}
+
 nav .container .nav-contents{
     display: flex;
     justify-content: space-between;
-}
-
-.nav-contents .logo{
+    align-items: center;
     padding: 1rem 0;
 }
 
@@ -115,8 +117,17 @@ nav .container .nav-contents{
     transition: .3s ease;
 }
 
-.nav-contents ul li a:hover{
+.logo{
+    display: flex;
+}
+
+.logo ul{
+    display: none;
+}
+
+.nav-contents ul li a:hover, .logo ul i:hover{
     color: var(--btnBg);
+    cursor: pointer;
 }
 
 .nav-contents ul li a i{
@@ -144,12 +155,12 @@ nav .container .nav-contents{
 .hero .container .hero-contents h1{
     text-transform: uppercase;
     color: var(--heading-secondary);
-    font-size: 4rem;
+    font-size: 4.5rem;
     word-spacing: .5rem;
     letter-spacing: .2rem;
     font-family: "oswald";
     font-weight: normal;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.5rem;
 }
 
 .hero-contents p{
@@ -158,7 +169,7 @@ nav .container .nav-contents{
     font-size: 1.1rem;
     line-height: 2rem;
     width: 60%;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.5rem;
 }
 
 .hero-contents #btn1{
