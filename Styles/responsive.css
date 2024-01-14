@@ -1,4 +1,30 @@
+/* for large device */
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+    .service-contents{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .service-contents .service-item{
+        flex-basis: 49%;
+    }
+
+}
+
 /* for midium devices */
+
+@media screen and (max-width: 800px) and (min-width: 250px) {
+    .service-contents{
+        display: flex;
+        flex-direction: column;
+    }
+    .service-contents .service-item{
+        flex-basis: 49%;
+    }
+}
+
+/* for small devices */
 
 @media screen and (max-width: 900px) {
     .contact-bar{
@@ -11,10 +37,11 @@
     #search-icon{
         display: block;
     }
+    
 
 }
 
-/* for small devices */
+/* for x-small devices */
 
 @media screen and (max-width: 800px) and (min-width: 450px) {
     .nav-contents ul li a i{
@@ -29,9 +56,10 @@
     .hero .container .hero-contents h1{
         font-size: 3rem;
     }
+    
 }
 
-/* for x-small devices */
+/* for xx-small devices */
 
 @media screen and (max-width: 450px) and (min-width: 319px) {
     .nav-contents ul li a i{
@@ -71,4 +99,5 @@
         padding: 0 .5rem;
         letter-spacing: normal;
     }
+    
 }

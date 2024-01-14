@@ -10,7 +10,7 @@
     --bgClor-secondary: #fff;
     --heading-primary: #000;
     --heading-secondary: #fff;
-    --pClor: #333333;
+    --pClor: #656565;
     --btnBg: #ff5200;
     --btnText: #fff;
     --btnHover: #252525;
@@ -20,11 +20,31 @@
     max-width: 114rem;
     margin: 0 auto;
 }
+
+section{
+    padding: 9rem 0;
+}
+
+h2,h3{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--heading-primary);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+p{
+    font-size: 1.6rem;
+    color: var(--pClor);
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
 button {
     display: block;
     background: var(--btnBg);
     color: var(--btnText);
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 1rem 1.6rem;
     border: none;
     border-radius: .5rem;
@@ -177,4 +197,68 @@ nav .container .nav-contents{
     font-family: "oswald", sans-serif;
     letter-spacing: .2rem;
     margin-bottom: 4rem;
+}
+
+/* service section */
+
+.service{
+    background-color: var(--bgClor-primary)
+}
+
+.service .container .service-contents{
+    display: flex;
+    gap: 1rem;
+}
+
+.service-contents .service-item{
+    background-color: var(--bgClor-secondary);
+    flex-basis: 25%;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: .1rem .1rem .3rem var(--btnBg),
+    -.1rem 0rem .2rem var(--btnBg);
+    transition: .3s ease;
+}
+
+.service-item i{
+    font-size: 4rem;
+    color: var(--btnBg);
+    padding: 1rem;
+    padding-top: 0rem;
+}
+
+.service-contents h3{
+    font-size: 2.2rem;
+    font-family: "oswald", sans-serif;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+
+.service-contents p{
+    font-size: 1.3rem;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-contents a{
+    text-decoration: none;
+    color: var(--btnBg);
+    font-size: 1.4rem;
+}
+
+.service-contents a i{
+    font-size: 1.4rem;
+    padding: 0;
+    padding-left: .5rem;
+}
+
+.service-contents .service-item:hover{
+    background-color: var(--btnBg);
+}
+
+.service-item:hover i,
+.service-item:hover h3,
+.service-item:hover p,
+.service-item:hover a{
+    color: var(--btnText);
 }
