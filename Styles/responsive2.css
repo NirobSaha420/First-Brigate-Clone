@@ -1,0 +1,120 @@
+/* x-small devices */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    #work-with-our-team .container .work-with-us-contents{
+        flex-direction: column;
+    }
+    .work-with-us-contents .work-with-us-texts .points ul li{
+        margin-right: 2.6rem;
+        /* max rem of ul li's margin right and margin left is 7rem because it is 
+        the maximam width of his parent container !important */
+        margin-left: 0rem;
+        flex-shrink: -20;
+    }
+    .points ul li a{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .points ul li a i{
+        font-size: .8rem;
+        font-weight: 700;
+    }
+    .work-with-us-contents .work-with-us-texts button{
+        font-size: 1.2rem;
+        margin-top: .5rem;
+        margin-left: 0;
+        flex-shrink: -10;
+    }
+    /* complete */
+}
+/* small devices */
+@media screen and (min-width: 481px) and (max-width: 800px) {
+    #work-with-our-team .container .work-with-us-contents{
+        flex-direction: column;
+    }
+    .work-with-us-contents .work-with-us-texts .points ul li{
+        margin-right: 3rem;
+        /* max rem of ul li's margin right and margin left is 7rem because it is 
+        the maximam width of his parent container !important */
+        margin-left: 0rem;
+        flex-shrink: -50;
+    }
+    .points ul li a{
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    .points ul li a i{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .work-with-us-contents .work-with-us-texts button{
+        margin: auto;
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+}
+/* small devices */
+@media screen and (min-width: 801px) and (max-width: 930px) {
+    #work-with-our-team .container .work-with-us-contents{
+        flex-direction: column;
+    }
+
+    .work-with-us-contents .work-with-us-texts .points ul li{
+        margin-right: 5rem;
+        /* max rem of ul li's margin right and margin left is 7rem because it is 
+        the maximam width of his parent container !important */
+        margin-left: 0rem;
+        flex-shrink: -30;
+    }
+    .points ul li a{
+        font-size: 1.3rem;
+        font-weight: 700;
+        flex-shrink: -40;
+    }
+    .points ul li a i{
+        font-size: 1.2rem;
+        font-weight: 700;
+        flex-shrink: -50;
+    }
+    .work-with-us-contents .work-with-us-texts button{
+        margin: auto;
+        margin-top: 1rem;
+        margin-left: 0;
+        flex-shrink: -40;
+    }
+}
+/* medium devices */
+@media screen and (min-width: 1250px) {
+    .work-with-us-contents .work-with-us-texts .points ul li{
+        margin-right: 5rem;
+        /* max rem of ul li's margin right and margin left is 7rem because it is 
+        the maximam width of his parent container !important */
+        margin-left: 1rem;
+        flex-grow: 3;
+    }
+    .points ul li a{
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 4rem;
+        flex-grow: 3;
+    }
+    .work-with-us-texts h3{
+        font-size: 5rem;
+        margin-bottom: 4rem;
+    }.work-with-us-texts p{
+        font-size: 2.2rem;
+        line-height: 4rem;
+        margin-bottom: 5rem;
+    }
+    .points ul li a i{
+        font-size: 1.8rem;
+        font-weight: 700;
+        flex-grow: 3;
+    }
+    .work-with-us-contents .work-with-us-texts button{
+        margin: auto;
+        margin-top: 6rem;
+        margin-left: 0;
+        flex-grow: 3;
+        font-size: 3.8rem;
+    }
+}

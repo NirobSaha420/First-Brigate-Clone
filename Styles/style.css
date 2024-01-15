@@ -11,6 +11,7 @@
     --heading-primary: #000;
     --heading-secondary: #fff;
     --pClor: #656565;
+    --pClor-secondary: #333;
     --btnBg: #ff5200;
     --btnText: #fff;
     --btnHover: #252525;
@@ -49,7 +50,7 @@ button {
     border: none;
     border-radius: .5rem;
     text-transform: uppercase;
-    transition: .3s ease;
+    transition: .3s ease-out;
 }
 button:hover {
     background: var(--btnHover);
@@ -193,7 +194,7 @@ nav .container .nav-contents{
 }
 
 .hero-contents #btn1{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-family: "oswald", sans-serif;
     letter-spacing: .2rem;
     margin-bottom: 4rem;
@@ -217,7 +218,7 @@ nav .container .nav-contents{
     text-align: center;
     box-shadow: .1rem .1rem .3rem var(--btnBg),
     -.1rem 0rem .2rem var(--btnBg);
-    transition: .3s ease;
+    transition: .3s ease-in;
 }
 
 .service-item i{
@@ -261,4 +262,88 @@ nav .container .nav-contents{
 .service-item:hover p,
 .service-item:hover a{
     color: var(--btnText);
+}
+
+/* work with us section */
+
+#work-with-our-team{
+    background-color: var(--bgClor-secondary);
+}
+
+#work-with-our-team .container .work-with-us-contents{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.work-with-us-contents .work-img,
+.work-with-us-contents .work-with-us-texts{
+    flex-basis: 49%;
+}
+
+.work-img{
+    overflow: hidden;
+}
+
+.work-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    transition: transform .3s ease-out;
+}
+
+.work-img img:hover{
+    transform: scale(1.08);
+}
+
+.work-with-us-texts h3{
+    font-family: "oswald", sans-serif;
+    font-weight: normal;
+    letter-spacing: .1rem;
+}
+
+.work-with-us-texts p{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+
+.work-with-us-texts .points{
+    display: flex;
+}
+
+.points ul{
+    list-style-type: none;
+}
+
+.points ul li{
+    margin-right: 4.45rem;
+    /* max rem of ul li's margin right is 4.45rem because it is the maximam width of his 
+    parent container !important */
+    margin-bottom: 1.2rem;
+}
+
+.points ul li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--pClor-secondary);
+    font-weight: 600;
+    transition: .3s ease-in;
+}
+
+.points ul li a:hover{
+    color: var(--btnBg);
+}
+
+.points ul li a i{
+    font-size: 1.2rem;
+    padding-right: .5rem;
+    font-weight: bold;
+}
+
+.work-with-us-contents .work-with-us-texts button{
+    font-size: 1.7rem;
+    font-family: "oswald", sans-serif;
+    letter-spacing: .2rem;
+    word-spacing: .5rem;
+    font-weight: 700;
 }

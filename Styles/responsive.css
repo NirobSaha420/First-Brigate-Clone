@@ -9,6 +9,7 @@
     .service-contents .service-item{
         flex-basis: 49%;
     }
+    
 
 }
 
@@ -22,6 +23,7 @@
     .service-contents .service-item{
         flex-basis: 49%;
     }
+    
 }
 
 /* for small devices */
@@ -38,7 +40,7 @@
         display: block;
     }
     
-
+    
 }
 
 /* for x-small devices */
@@ -96,7 +98,7 @@
         color: #000;
     }
     .nav-contents ul li a{
-        padding: 0 .5rem;
+        padding: 0 .2rem;
         letter-spacing: normal;
     }
     
