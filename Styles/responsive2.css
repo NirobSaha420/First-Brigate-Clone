@@ -5,8 +5,6 @@
     }
     .work-with-us-contents .work-with-us-texts .points ul li{
         margin-right: 2.6rem;
-        /* max rem of ul li's margin right and margin left is 7rem because it is 
-        the maximam width of his parent container !important */
         margin-left: 0rem;
         flex-shrink: -20;
     }
@@ -24,7 +22,6 @@
         margin-left: 0;
         flex-shrink: -10;
     }
-    /* complete */
 }
 /* small devices */
 @media screen and (min-width: 481px) and (max-width: 800px) {
@@ -33,8 +30,6 @@
     }
     .work-with-us-contents .work-with-us-texts .points ul li{
         margin-right: 3rem;
-        /* max rem of ul li's margin right and margin left is 7rem because it is 
-        the maximam width of his parent container !important */
         margin-left: 0rem;
         flex-shrink: -50;
     }
@@ -60,8 +55,6 @@
 
     .work-with-us-contents .work-with-us-texts .points ul li{
         margin-right: 5rem;
-        /* max rem of ul li's margin right and margin left is 7rem because it is 
-        the maximam width of his parent container !important */
         margin-left: 0rem;
         flex-shrink: -30;
     }
@@ -86,8 +79,6 @@
 @media screen and (min-width: 1250px) {
     .work-with-us-contents .work-with-us-texts .points ul li{
         margin-right: 5rem;
-        /* max rem of ul li's margin right and margin left is 7rem because it is 
-        the maximam width of his parent container !important */
         margin-left: 1rem;
         flex-grow: 3;
     }
