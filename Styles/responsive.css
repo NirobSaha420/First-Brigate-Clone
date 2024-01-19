@@ -1,33 +1,4 @@
-/* for large device */
-
-@media screen and (max-width: 1000px) and (min-width: 800px) {
-    .service-contents{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .service-contents .service-item{
-        flex-basis: 49%;
-    }
-    
-
-}
-
-/* for midium devices */
-
-@media screen and (max-width: 800px) and (min-width: 250px) {
-    .service-contents{
-        display: flex;
-        flex-direction: column;
-    }
-    .service-contents .service-item{
-        flex-basis: 49%;
-    }
-    
-}
-
-/* for small devices */
-
+/*important ! */
 @media screen and (max-width: 900px) {
     .contact-bar{
         display: none;
@@ -35,38 +6,16 @@
     .nav-contents{
         flex-direction: column;
     }
-
-    #search-icon{
-        display: block;
-    }
-    
     
 }
-
-/* for x-small devices */
-
-@media screen and (max-width: 800px) and (min-width: 450px) {
-    .nav-contents ul li a i{
-        display: none;
-    }
-    .hero{
-        padding: 7rem 0;
-    }
-    .hero .container .hero-contents{
-        width: 100%;
-    }
-    .hero .container .hero-contents h1{
-        font-size: 3rem;
-    }
-    
-}
+/*important ! */
 
 /* for xx-small devices */
-
-@media screen and (max-width: 450px) and (min-width: 319px) {
+@media screen and (max-width: 480px){
     .nav-contents ul li a i{
         display: none;
     }
+
     .hero{
         padding: 5rem 0;
     }
@@ -83,23 +32,185 @@
     .hero-contents p{
         width: 80%;
     }
-    button{
-        font-size: .6rem;
+    .hero-contents #btn1{
+        font-size: 1rem;
     }
+
+
     .nav-contents ul li a{
         padding: 0 .5rem;
-    }
-    #search-icon{
-        display: none;
+        letter-spacing: normal;
     }
     .logo ul{
         display: block;
         font-size: 2.5rem;
         color: #000;
     }
-    .nav-contents ul li a{
-        padding: 0 .2rem;
-        letter-spacing: normal;
+
+    #work-with-our-team .container .work-with-us-contents{
+        flex-direction: column;
+    }
+    .work-with-us-contents .work-with-us-texts .points ul li{
+        margin-right: 2.6rem;
+        margin-left: 0rem;
+        flex-shrink: -20;
+    }
+    .work-with-us-texts h3{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .work-with-us-texts p{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .points ul li a{
+        font-size: .8rem;
+        font-weight: 900;
+    }
+    .points ul li a i{
+        font-size: .6rem;
+        font-weight: bolder;
+    }
+    .work-with-us-contents .work-with-us-texts button{
+        font-size: 1.05rem;
+        margin-top: .5rem;
+        margin-left: 0;
+    }
+    .achivements .achivements-contents{
+        flex-direction: column;
+        align-items: center;
+    }
+    .achivements-contents .achivement-example h4{
+        font-size: 1.4rem;
     }
     
+
+}
+
+/* for x-small devices */
+@media screen and (max-width: 800px) and (min-width: 480px) {
+    .nav-contents ul li a i{
+        display: none;
+    }
+    .hero{
+        padding: 7rem 0;
+    }
+    .hero .container .hero-contents{
+        width: 100%;
+    }
+    .hero .container .hero-contents h1{
+        font-size: 3rem;
+    }
+    #search-icon{
+        display: block;
+    }
+
+    #work-with-our-team .container .work-with-us-contents{
+        flex-direction: column;
+    }
+    .work-with-us-contents .work-with-us-texts .points ul li{
+        margin-right: 3rem;
+        margin-left: 0rem;
+    }
+    .points ul li a{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .points ul li a i{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .work-with-us-contents .work-with-us-texts button{
+        margin: auto;
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+    .achivements-contents .achivement-example .icons{
+        font-size: 4rem;
+        color: var(--heading-secondary);
+        margin-top: -1rem;
+    }
+    .achivement-example h3,h4{
+        color: var(--heading-secondary);
+        text-transform: uppercase;
+        font-family: "oswald", sans-serif;
+        margin-bottom: 1rem;
+        letter-spacing: -.02rem;
+    }
+    .achivement-example h3{
+        font-size: 1.5rem;
+    }
+    .achivement-example h4{
+        font-size: 1rem;
+    }
+    
+}
+
+/* for small devices */
+@media screen and (max-width: 930px) and (min-width: 800px) {
+    #work-with-our-team .container .work-with-us-contents{
+        flex-direction: column;
+    }
+
+    .work-with-us-contents .work-with-us-texts .points ul li{
+        margin-right: 5rem;
+        margin-left: 0rem;
+    }
+    .points ul li a{
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    .points ul li a i{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .work-with-us-contents .work-with-us-texts button{
+        margin: auto;
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+    .achivements-contents .achivement-example .icons{
+        font-size: 5rem;
+        color: var(--heading-secondary);
+        margin-top: -1rem;
+    }
+    .achivement-example h3,h4{
+        color: var(--heading-secondary);
+        text-transform: uppercase;
+        font-family: "oswald", sans-serif;
+        margin-bottom: 1rem;
+        letter-spacing: -.02rem;
+    }
+    .achivement-example h3{
+        font-size: 1.8rem;
+    }
+    .achivement-example h4{
+        font-size: 1.5rem;
+    }
+}
+
+/* for midium devices */
+@media screen and (max-width: 800px) and (min-width: 250px) {
+    .service-contents{
+        display: flex;
+        flex-direction: column;
+    }
+    .service-contents .service-item{
+        flex-basis: 49%;
+    }
+    
+}
+
+/* for large device */
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+    .service-contents{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .service-contents .service-item{
+        flex-basis: 49%;
+    }
+
 }

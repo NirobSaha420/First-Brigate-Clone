@@ -1,82 +1,5 @@
-/* x-small devices */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    #work-with-our-team .container .work-with-us-contents{
-        flex-direction: column;
-    }
-    .work-with-us-contents .work-with-us-texts .points ul li{
-        margin-right: 2.6rem;
-        margin-left: 0rem;
-        flex-shrink: -20;
-    }
-    .points ul li a{
-        font-size: 1rem;
-        font-weight: 700;
-    }
-    .points ul li a i{
-        font-size: .8rem;
-        font-weight: 700;
-    }
-    .work-with-us-contents .work-with-us-texts button{
-        font-size: 1.2rem;
-        margin-top: .5rem;
-        margin-left: 0;
-        flex-shrink: -10;
-    }
-}
-/* small devices */
-@media screen and (min-width: 481px) and (max-width: 800px) {
-    #work-with-our-team .container .work-with-us-contents{
-        flex-direction: column;
-    }
-    .work-with-us-contents .work-with-us-texts .points ul li{
-        margin-right: 3rem;
-        margin-left: 0rem;
-        flex-shrink: -50;
-    }
-    .points ul li a{
-        font-size: 1.4rem;
-        font-weight: 700;
-    }
-    .points ul li a i{
-        font-size: 1.2rem;
-        font-weight: 700;
-    }
-    .work-with-us-contents .work-with-us-texts button{
-        margin: auto;
-        margin-top: 1rem;
-        margin-left: 0;
-    }
-}
-/* small devices */
-@media screen and (min-width: 801px) and (max-width: 930px) {
-    #work-with-our-team .container .work-with-us-contents{
-        flex-direction: column;
-    }
-
-    .work-with-us-contents .work-with-us-texts .points ul li{
-        margin-right: 5rem;
-        margin-left: 0rem;
-        flex-shrink: -30;
-    }
-    .points ul li a{
-        font-size: 1.3rem;
-        font-weight: 700;
-        flex-shrink: -40;
-    }
-    .points ul li a i{
-        font-size: 1.2rem;
-        font-weight: 700;
-        flex-shrink: -50;
-    }
-    .work-with-us-contents .work-with-us-texts button{
-        margin: auto;
-        margin-top: 1rem;
-        margin-left: 0;
-        flex-shrink: -40;
-    }
-}
 /* medium devices */
-@media screen and (min-width: 1250px) {
+/* @media screen and (min-width: 1250px) {
     .work-with-us-contents .work-with-us-texts .points ul li{
         margin-right: 5rem;
         margin-left: 1rem;
@@ -108,4 +31,4 @@
         flex-grow: 3;
         font-size: 3.8rem;
     }
-}
+} */
