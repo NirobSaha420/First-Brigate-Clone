@@ -1,22 +1,10 @@
-/*important ! */
-@media screen and (max-width: 900px) {
-    .contact-bar{
-        display: none;
-    }
-    .nav-contents{
-        flex-direction: column;
-    }
-    
-}
-/*important ! */
-
-/* for xx-small devices */
-@media screen and (max-width: 480px){
+/* for small devices */
+@media screen and (max-width: 635px){
     .nav-contents ul li a i{
         display: none;
     }
-
-    .hero{
+    .hero,
+    .more-from-us{
         padding: 5rem 0;
     }
     .hero .container .hero-contents{
@@ -35,8 +23,11 @@
     .hero-contents #btn1{
         font-size: 1rem;
     }
-
-
+    .service-contents{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .nav-contents ul li a{
         padding: 0 .5rem;
         letter-spacing: normal;
@@ -55,13 +46,20 @@
         margin-left: 0rem;
         flex-shrink: -20;
     }
-    .work-with-us-texts h3{
+    .work-with-us-texts h3,
+    .section-heading h3,
+    .more-from-us-contents .more-from-us-card h4{
         font-size: 2rem;
         margin-bottom: 1rem;
     }
-    .work-with-us-texts p{
+    .more-from-us-contents .more-from-us-card h4,p{
+        text-align: center;
+    }
+    .work-with-us-texts p,
+    .section-heading p,
+    .more-from-us-contents .more-from-us-card p{
         font-size: 1rem;
-        line-height: 2rem;
+        line-height: 1.5rem;
     }
     .points ul li a{
         font-size: .8rem;
@@ -83,12 +81,14 @@
     .achivements-contents .achivement-example h4{
         font-size: 1.4rem;
     }
-    
 
 }
 
-/* for x-small devices */
-@media screen and (max-width: 800px) and (min-width: 480px) {
+/* for small devices style end */
+
+
+/* for medium devices */
+@media screen and (max-width: 980px) and (min-width: 635px) {
     .nav-contents ul li a i{
         display: none;
     }
@@ -104,12 +104,11 @@
     #search-icon{
         display: block;
     }
-
     #work-with-our-team .container .work-with-us-contents{
         flex-direction: column;
     }
     .work-with-us-contents .work-with-us-texts .points ul li{
-        margin-right: 3rem;
+        margin-right: 2rem;
         margin-left: 0rem;
     }
     .points ul li a{
@@ -125,92 +124,49 @@
         margin-top: 1rem;
         margin-left: 0;
     }
-
-    .achivements-contents .achivement-example .icons{
-        font-size: 4rem;
-        color: var(--heading-secondary);
-        margin-top: -1rem;
-    }
-    .achivement-example h3,h4{
-        color: var(--heading-secondary);
-        text-transform: uppercase;
-        font-family: "oswald", sans-serif;
-        margin-bottom: 1rem;
-        letter-spacing: -.02rem;
-    }
-    .achivement-example h3{
-        font-size: 1.5rem;
-    }
-    .achivement-example h4{
-        font-size: 1rem;
-    }
     
 }
 
-/* for small devices */
-@media screen and (max-width: 930px) and (min-width: 800px) {
-    #work-with-our-team .container .work-with-us-contents{
+/* for medium devices style end */
+
+
+/* for large devices */
+@media screen and (max-width: 980px){
+    .contact-bar{
+        display: none;
+    }
+    .nav-contents{
         flex-direction: column;
     }
-
-    .work-with-us-contents .work-with-us-texts .points ul li{
-        margin-right: 5rem;
-        margin-left: 0rem;
-    }
-    .points ul li a{
-        font-size: 1.3rem;
-        font-weight: 700;
-    }
-    .points ul li a i{
-        font-size: 1.2rem;
-        font-weight: 700;
-    }
-    .work-with-us-contents .work-with-us-texts button{
-        margin: auto;
-        margin-top: 1rem;
-        margin-left: 0;
-    }
-    .achivements-contents .achivement-example .icons{
-        font-size: 5rem;
-        color: var(--heading-secondary);
-        margin-top: -1rem;
-    }
-    .achivement-example h3,h4{
-        color: var(--heading-secondary);
-        text-transform: uppercase;
-        font-family: "oswald", sans-serif;
-        margin-bottom: 1rem;
-        letter-spacing: -.02rem;
-    }
-    .achivement-example h3{
-        font-size: 1.8rem;
-    }
-    .achivement-example h4{
-        font-size: 1.5rem;
-    }
-}
-
-/* for midium devices */
-@media screen and (max-width: 800px) and (min-width: 250px) {
-    .service-contents{
-        display: flex;
-        flex-direction: column;
-    }
-    .service-contents .service-item{
-        flex-basis: 49%;
-    }
-    
-}
-
-/* for large device */
-@media screen and (max-width: 1000px) and (min-width: 800px) {
-    .service-contents{
+    .service-contents,
+    .more-from-us-contents{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
     .service-contents .service-item{
         flex-basis: 49%;
+        font-family: "oswald",sans-serif;
     }
+    
+}
 
+/* for large devices style end */
+
+/* for x-large devices */
+
+@media screen and (min-width: 1200px) {
+    .work-with-us-texts h3,p,.points ul li a{
+        margin-bottom: 3rem;
+    }
+    .work-with-us-texts h3{
+        font-size: 4rem;
+    }
+    .work-with-us-texts p{
+        font-size: 1.8rem;
+        line-height: 3.4rem;
+    }
+    .work-with-us-texts ul{
+        font-size: 4rem;
+    }
 }
