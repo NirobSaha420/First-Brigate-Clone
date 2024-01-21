@@ -51,7 +51,7 @@ section{
     margin: 1rem auto;
 }
 
-h2,h3,h4,h5{
+h2,h3,h4,h5,h6{
     font-size: 3rem;
     font-weight: 500;
     color: var(--heading-primary);
@@ -71,7 +71,8 @@ button {
     display: block;
     background: var(--btnBg);
     color: var(--btnText);
-    font-size: 2rem;
+    font-size: 1.6rem;
+    letter-spacing: -.02rem;
     padding: 1rem 1.6rem;
     border: none;
     border-radius: .5rem;
@@ -242,7 +243,7 @@ nav .container .nav-contents{
     flex-basis: 25%;
     padding: 3rem;
     text-align: center;
-    box-shadow: .02rem .02rem .5rem var(--pClor);
+    box-shadow: .02rem .02rem .5rem #bbbbbb;
     transition: .3s ease-in;
 }
 
@@ -425,4 +426,80 @@ nav .container .nav-contents{
 }
 .more-from-us-card p{
     font-size: 1.2rem;
+}
+
+/* premier member section */
+
+.premier-member{
+    background-color: var(--bgClor-secondary);
+}
+.premier-member .container .premier-member-contents{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+.premier-member-details{
+    border: .1rem solid var(--bgClor-primary);
+    background-color: var(--bgClor-secondary);
+    box-shadow: .5rem .5rem 1rem var(--bgClor-primary),
+    -.2rem -.2rem 1rem var(--bgClor-primary);
+    border-radius: .5rem;
+    flex-basis: 32%;
+    padding: 3rem;
+}
+.premier-member-contents .premier-member-details h3{
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.premier-member-details h2{
+    margin-bottom: .5rem;
+}
+.premier-member-details h2 span{
+    font-size: 3.4rem;
+    font-weight: bolder;
+    text-transform: lowercase;
+}
+.premier-member-details h2 span span{
+    font-size: 2rem;
+    font-weight: normal;
+}
+.premier-member-details ul li{
+    list-style-type: none;
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+.premier-member-details ul li i{
+    font-size: 1.2rem;
+    padding-right: .5rem;
+    color: var(--btnBg);
+    font-weight: bolder;
+}
+.premier-member-details button{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+/* idea section */
+
+.idea-section{
+    padding: 0;
+    display: flex;
+}
+.idea-section .idea-section-img img{
+    width: 100%;
+}
+.idea-section .idea-section-texts{
+    background-color: var(--pClor-secondary);
+    padding: 2rem;
+}
+.idea-section-texts .idea-section-ideas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.idea-section-ideas h4{
+    font-size: 1.8rem;
+    color: var(--heading-secondary);
+}
+.idea-section-ideas p{
+   color: #ddd;
 }
