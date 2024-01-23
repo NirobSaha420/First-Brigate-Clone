@@ -79,6 +79,12 @@
     .achivements-contents .achivement-example h4{
         font-size: 1.4rem;
     }
+    .premier-member-contents .premier-member-details h2,
+    .premier-member-contents .premier-member-details h3,
+    .premier-member-contents .premier-member-details ul,
+    .premier-member-contents .premier-member-details button{
+        margin-left: 8%;
+    }
 
 }
 
@@ -122,15 +128,35 @@
         margin-top: 1rem;
         margin-left: 0;
     }
+    .more-from-us .container .more-from-us-contents{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .more-from-us-contents .more-from-us-card{
+        grid-column: span 2;
+    }
     .premier-member .container .premier-member-contents{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(12,1fr);
+        /* grid-template-rows: repeat(2,1fr); */
         gap: 1rem;
+        justify-content: center;
     }
-    /* #premier-member-contents-last{
-        display: block;
-        margin: auto;
-    } */
+    .premier-member-contents .premier-member-details{
+        grid-column: span 6;
+    }
+    .premier-member-contents #premier-member-details-last{
+        grid-column: 4/10;
+    }
+    .premier-member-contents #premier-member-details-last h3,
+    .premier-member-contents #premier-member-details-last h2,
+    .premier-member-contents #premier-member-details-last ul,
+    .premier-member-contents #premier-member-details-last button{
+        margin-left: 12%;
+    }
+    .premier-member-contents #premier-member-details-last ul li i{
+        padding-right: 5%;
+    }
     
 }
 
