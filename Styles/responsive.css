@@ -14,7 +14,11 @@
         font-size: 2rem;
         margin-bottom: 2rem;
     }
-    .hero-contents p,h1,button{
+    .hero-contents p,h1,button,
+    .card1 span,
+    .card2 span,
+    .card3 span,
+    .card4 span{
         margin-bottom: 1rem;
     }
     .hero-contents p{
@@ -34,7 +38,8 @@
     }
     #work-with-our-team .container .work-with-us-contents,
     .service-contents,
-    .premier-member .container .premier-member-contents{
+    .premier-member .container .premier-member-contents,
+    .team-section .container .team-section-contents{
         flex-direction: column;
         gap: 1rem;
     }
@@ -45,9 +50,14 @@
     }
     .work-with-us-texts h3,
     .section-heading h3,
-    .more-from-us-contents .more-from-us-card h4{
+    .more-from-us-contents .more-from-us-card h4,
+    .card1 h2,
+    .card2 h2,
+    .card3 h2,
+    .card4 h2{
         font-size: 2rem;
         margin-bottom: 1rem;
+        margin-top: 1rem;
     }
     .more-from-us-contents .more-from-us-card h4,
     .more-from-us-card p{
@@ -128,11 +138,16 @@
         margin-top: 1rem;
         margin-left: 0;
     }
-    .more-from-us .container .more-from-us-contents{
+    .more-from-us .container .more-from-us-contents,
+    .team-section .container .team-section-contents{
         display: grid;
         grid-template-columns: repeat(4,1fr);
     }
-    .more-from-us-contents .more-from-us-card{
+    .more-from-us-contents .more-from-us-card,
+    .team-section .container .team-section-contents .card1,
+    .team-section .container .team-section-contents .card2,
+    .team-section .container .team-section-contents .card3,
+    .team-section .container .team-section-contents .card4{
         grid-column: span 2;
     }
     .premier-member .container .premier-member-contents{

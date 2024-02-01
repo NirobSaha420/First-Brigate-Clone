@@ -485,60 +485,185 @@ nav .container .nav-contents{
 /* idea section */
 
 .idea-section{
-    padding: 0;
-    padding-bottom: 100rem;
-    display: flex;
-    background-position: center;
-    background-size: cover;
+    background-color: var(--bgClor-secondary);
+    width: 100%;
 }
-.idea-section .idea-section-texts .idea-section-heading h3,
-.idea-section .idea-section-texts .idea-section-heading p,
-.idea-section-ideas h4,
-.idea-section-ideas p{
+.idea-section .idea-section-container .idea-section-contents{
+    display: flex;
+    width: 100%;
+}
+.idea-section-contents .img,
+.idea-section-contents .img img{
+    width: 100%;
+}
+.idea-section-contents .idea-section-texts{
+    background-color: var(--btnHover);
+    padding: 0 3rem;
+}
+.idea-section-texts{
+    width: 100%;
+}
+.idea-section-texts .idea-heading h2{
+    margin: 2rem 0;
+    font-size: 2.6rem;
     color: var(--heading-secondary);
 }
-.idea-section-heading h3{
-    font-size: 2.4rem;
-    padding-top: 2rem;
+.idea-section-texts .idea-heading p{
+    font-size: 1.2rem;
+    color: var(--heading-secondary);
+    margin-bottom: 3rem;
 }
-.idea-section .idea-section-img img{
-    width: 100%;
-    height: 100%;
-}
-.idea-section .idea-section-texts{
-    background-color: var(--pClor-secondary);
-    padding: 1rem 3rem;
-}
-.idea-section-texts .idea-section-ideas{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-.idea-section-ideas h4{
-    font-size: 1.8rem;
-}
-.idea-section-ideas p{
-   font-size: 1.3rem;
-   width: 70%;
-}
-.idea-section-ideas i{
-    font-size: 5rem;
-    color: var(--btnBg);
-    margin-right: 2rem;
-}
-#plug-icon{
-    transform: rotate(40deg);
-}
-.idea1 .icons,
-.idea2 .icons{
-    float: left;
-    margin: auto 1rem auto 0;
-}
-.idea1-texts,
-.idea2-texts{
-    width: 100%;
-    margin-top: 2rem;
-}
-.idea1-contents,
-.idea2-contents{
+.idea-section-texts .idea-texts .idea-container{
     display: flex;
+    justify-content: space-between;
+}
+.idea-container .content1,
+.idea-container .content2,
+.idea-container .content3,
+.idea-container .content4{
+    display: flex;
+    justify-content: space-around;
+}
+.idea-container .content1 .icons i,
+.idea-container .content2 .icons i,
+.idea-container .content3 .icons i,
+.idea-container .content4 .icons i{
+    font-size: 4rem;
+    color: var(--btnBg);
+    margin: 2rem 2rem 0 0;
+}
+.idea-container .content1 .texts h3,
+.idea-container .content2 .texts h3,
+.idea-container .content3 .texts h3,
+.idea-container .content4 .texts h3{
+    font-size: 1.6rem;
+    color: var(--heading-secondary);
+    margin-bottom: 0rem;
+}
+.idea-container .content1 .texts p,
+.idea-container .content2 .texts p,
+.idea-container .content3 .texts p,
+.idea-container .content4 .texts p{
+    font-size: 1.2rem;
+    color: var(--heading-secondary);
+    width: 70%;
+}
+
+/* team section */
+
+.team-section{
+    background-color: var(--bgClor-secondary);
+}
+.team-section .container .team-section-contents{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.team-section-contents .card1 .card1-contents .img img,
+.team-section-contents .card2 .card2-contents .img img,
+.team-section-contents .card3 .card3-contents .img img,
+.team-section-contents .card4 .card4-contents .img img{
+    max-width: 100%;
+    box-shadow: .1rem .08rem .5rem var(--pClor),
+    -.2rem -.2rem 1rem #eeeeee;
+}
+.card1-contents{
+    position: relative;  
+}
+.team-section-contents .card1:hover .card1-contents .links,
+.team-section-contents .card2:hover .card2-contents .links,
+.team-section-contents .card3:hover .card3-contents .links,
+.team-section-contents .card4:hover .card4-contents .links{
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+}
+.team-section-contents .card1 .card1-contents .links ul,
+.team-section-contents .card2 .card2-contents .links ul,
+.team-section-contents .card3 .card3-contents .links ul,
+.team-section-contents .card4 .card4-contents .links ul{
+    list-style-type: none;
+    text-decoration: none;
+    gap: 1rem;
+    display: flex;
+    font-size: 6.5rem;
+    margin-top: -8rem;
+    margin-left: 40%;
+}
+.card1 h2,
+.card2 h2,
+.card3 h2,
+.card4 h2{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1rem;
+}
+.card1 span,
+.card2 span,
+.card3 span,
+.card4 span{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    color: var(--pClor);
+    display: block;
+    text-align: center;
+}
+.card1 .card1-contents .links ul li a i,
+.card2 .card2-contents .links ul li a i,
+.card3 .card3-contents .links ul li a i,
+.card4 .card4-contents .links ul li a i{
+    padding: .6rem;
+    border-radius: 50%;
+}
+.card1-contents .links ul li a,
+.card2-contents .links ul li a,
+.card3-contents .links ul li a,
+.card4-contents .links ul li a{
+    color: var(--bgClor-secondary);
+    transition: .3s ease-in;
+}
+.card1-contents .links ul li a:hover,
+.card2-contents .links ul li a:hover,
+.card3-contents .links ul li a:hover,
+.card4-contents .links ul li a:hover{
+    color: var(--heading-primary);
+}
+.card1-contents .links ul li a i:hover,
+.card2-contents .links ul li a i:hover,
+.card3-contents .links ul li a i:hover,
+.card4-contents .links ul li a i:hover{
+    background-color: var(--bgClor-secondary);
+}
+.card1-contents .links ul li .facebook i,
+.card2-contents .links ul li .facebook i,
+.card3-contents .links ul li .facebook i,
+.card4-contents .links ul li .facebook i{
+    background-color: #3a6bb1;
+}
+.card1-contents .links ul li .twitter i,
+.card2-contents .links ul li .twitter i,
+.card3-contents .links ul li .twitter i,
+.card4-contents .links ul li .twitter i{
+    background-color: #0ec8f5;
+}
+.card1-contents .links ul li .google-plus i,
+.card2-contents .links ul li .google-plus i,
+.card3-contents .links ul li .google-plus i,
+.card4-contents .links ul li .google-plus i{
+    background-color: #f2623b;
+}
+.card1-contents .links ul li .linkedin i,
+.card2-contents .links ul li .linkedin i,
+.card3-contents .links ul li .linkedin i,
+.card4-contents .links ul li .linkedin i{
+    background-color: #0094d3;
+}
+.card1-contents .links,
+.card2-contents .links,
+.card3-contents .links,
+.card4-contents .links{
+    display: none;
 }
