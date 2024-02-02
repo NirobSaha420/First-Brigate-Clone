@@ -31,6 +31,7 @@ section{
     margin: auto;
     text-align: center;
     margin-top: -3rem;
+    margin-bottom: 4rem;
 }
 .section-heading h3{
     margin-bottom: 2rem;
@@ -73,7 +74,7 @@ button {
     color: var(--btnText);
     font-size: 1.6rem;
     letter-spacing: -.02rem;
-    padding: 1rem 1.6rem;
+    padding: 1.2rem 1.8rem;
     border: none;
     border-radius: .5rem;
     text-transform: uppercase;
@@ -437,7 +438,6 @@ nav .container .nav-contents{
 .premier-member .container .premier-member-contents{
     display: flex;
     justify-content: space-between;
-    margin-top: 5rem;
 }
 .premier-member-details{
     border: .1rem solid var(--bgClor-primary);
@@ -487,6 +487,7 @@ nav .container .nav-contents{
 .idea-section{
     background-color: var(--bgClor-secondary);
     width: 100%;
+    padding: 5rem 0;
 }
 .idea-section .idea-section-container .idea-section-contents{
     display: flex;
@@ -554,12 +555,21 @@ nav .container .nav-contents{
 .team-section{
     background-color: var(--bgClor-secondary);
 }
+.team-section  button{
+    background-color: var(--btnHover);
+    font-family: "oswald", sans-serif;
+    letter-spacing: .1rem;
+    margin: 5.6rem auto 0 auto;
+    transition: .3s ease-in-out;
+}
+.team-section button:hover{
+    background-color: var(--btnBg);
+}
 .team-section .container .team-section-contents{
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 2.5%;
 }
-
 .team-section-contents .card1 .card1-contents .img img,
 .team-section-contents .card2 .card2-contents .img img,
 .team-section-contents .card3 .card3-contents .img img,
@@ -666,4 +676,91 @@ nav .container .nav-contents{
 .card3-contents .links,
 .card4-contents .links{
     display: none;
+}
+
+/* news section */
+
+.news-section{
+    background-color: var(--bgClor-secondary);
+}
+.news-section-contents .news-section-cards{
+    display: flex;
+    gap: 2.5%;
+}
+.news-section-cards .card1,
+.news-section-cards .card2,
+.news-section-cards .card3{
+    box-shadow: .5rem .5rem 1rem var(--bgClor-primary),
+    -.2rem -.2rem 1rem var(--bgClor-primary);
+    /* box-shadow: .03rem .1rem .08rem #777,
+    -.02rem 0 .08rem #777; */
+}
+.news-section-cards .card1 .img img,
+.news-section-cards .card2 .img img,
+.news-section-cards .card3 .img img{
+    max-width: 100%;
+    margin-bottom: 2rem;
+    transition: transform .3s ease;
+}
+.news-section-cards .img img:hover{
+    transform: scale(1.05);
+}
+.news-section-cards .img{
+    overflow: hidden;
+}
+.news-section-cards .news-texts{
+    padding: 0 2rem;
+}
+/*.card1*/ .news-texts ul li{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #777;
+    margin: 0 8% 1rem 0;
+    position: relative;
+}
+/*.card1*/ .news-texts ul li:last-child{
+    margin-left: 2rem;
+}
+/*.card1*/ .news-texts ul li:last-child::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 2.6rem;
+    height: 3px;
+    border-radius: 10%;
+    background-color: var(--btnBg);
+    top: 50%;
+    left: -40%;
+    margin: auto;
+}
+
+.news-texts h3{
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    opacity: .8;
+}
+.news-texts h3:hover{
+    cursor: pointer;
+    color: var(--btnBg);
+    opacity: 2;
+}
+.news-texts p{
+    color: #777;
+    margin-bottom: 1rem;
+}
+.news-texts a{
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+}
+.news-texts a span{
+    cursor: pointer;
+    text-align: left;
+    color: var(--btnBg);
+    margin-bottom: 1.5rem;
+}
+.news-texts span b{
+    font-size: 1.5rem;
+    margin-left: .6rem;
 }

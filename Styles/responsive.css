@@ -3,8 +3,18 @@
     .nav-contents ul li a i{
         display: none;
     }
+    .section-heading{
+        width: 80%;
+        margin-top: -2rem;
+        margin-bottom: 3rem;
+    }
     .hero,
-    .more-from-us{
+    .service,
+    #work-with-our-team,
+    .more-from-us,
+    .premier-member,
+    .team-section,
+    .news-section{
         padding: 5rem 0;
     }
     .hero .container .hero-contents{
@@ -13,6 +23,10 @@
     .hero .container .hero-contents h1{
         font-size: 2rem;
         margin-bottom: 2rem;
+    }
+    .team-section button{
+        font-size: 1.2rem;
+        margin-top: 2rem;
     }
     .hero-contents p,h1,button,
     .card1 span,
@@ -39,9 +53,10 @@
     #work-with-our-team .container .work-with-us-contents,
     .service-contents,
     .premier-member .container .premier-member-contents,
-    .team-section .container .team-section-contents{
+    .team-section .container .team-section-contents,
+    .news-section-contents .news-section-cards{
         flex-direction: column;
-        gap: 1rem;
+        gap: 3rem;
     }
     .work-with-us-contents .work-with-us-texts .points ul li{
         margin-right: 2.6rem;
@@ -59,13 +74,24 @@
         margin-bottom: 1rem;
         margin-top: 1rem;
     }
+    .news-texts ul li:last-child::before{
+        width: 2rem;
+        left: -45%;
+    }
+    .news-texts h3{
+        font-size: 2rem;
+    }
     .more-from-us-contents .more-from-us-card h4,
-    .more-from-us-card p{
+    .more-from-us-card p,
+    .news-section-cards .news-texts,
+    .news-texts a span{
         text-align: center;
     }
     .work-with-us-texts p,
     .section-heading p,
-    .more-from-us-contents .more-from-us-card p{
+    .more-from-us-contents .more-from-us-card p,
+    .news-texts ul,
+    .news-texts p{
         font-size: 1rem;
         line-height: 1.5rem;
     }
@@ -150,18 +176,28 @@
     .team-section .container .team-section-contents .card4{
         grid-column: span 2;
     }
-    .premier-member .container .premier-member-contents{
+    .premier-member .container .premier-member-contents,
+    .news-section-contents .news-section-cards{
         display: grid;
         grid-template-columns: repeat(12,1fr);
         /* grid-template-rows: repeat(2,1fr); */
         gap: 1rem;
         justify-content: center;
     }
-    .premier-member-contents .premier-member-details{
+    .premier-member-contents .premier-member-details,
+    .news-section-contents .news-section-cards .card1,
+    .news-section-contents .news-section-cards .card2{
         grid-column: span 6;
     }
     .premier-member-contents #premier-member-details-last{
         grid-column: 4/10;
+    }
+    .news-section-contents .news-section-cards .card3{
+        grid-column: 3/11;
+    }
+    .news-texts ul li:last-child::before{
+        width: 2rem;
+        left: -45%;
     }
     .premier-member-contents #premier-member-details-last h3,
     .premier-member-contents #premier-member-details-last h2,
