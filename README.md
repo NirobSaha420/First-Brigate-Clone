@@ -8,4 +8,4 @@ Brigate Clone (for practice purpose only)
 
 ## Here is the original site's link below : 
 
-[Brigate]{https://brigate.vercel.app/}
+[Brigate](https://brigate.vercel.app/)
